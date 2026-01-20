@@ -13,6 +13,7 @@
     <!--Define a description of your web page-->
     <meta name="description" content="Example 1 for HTML & CSS module" />
     <meta name="author" content="Hanna" />
+
     <title>cs3990 Lab1 Home Page</title>
     <link
       rel="icon"
@@ -23,22 +24,63 @@
     
     <link rel="stylesheet" href="Styles\styles.css" />
   </head>
+
+
   <body>
-    <h1> About me!!!</h1>
+  <div id="Top"></div> 
+    <h1> Personal Information</h1>
+      <div class="me">
+      <img src="Images/me.jpg" alt="A Photo of me"
+        width="150em" height="150em" style="border-color: #ffc0cb;"
+        </div>
       <p>
-        Connor Roberts </Br>
+        Name: Connor Roberts <Br>
+        DoB: 01-05-2005 <br>
+        Home Town: [Enter City Here] <br>
+        Martial Status: None <br>
+        Contact Information:
+        <ul type="disk">
+          <li>Phone: 780-780-7800</li>
+          <li>Email: Email@Email.com</li>
+          <li>Address: 12345 12St </li>
+        </ul>
       </p>
-    <h2>Contact Information</h2>
+      <img src="Images/code.jpg" alt="Coding"
+      width="250em" height="150em" style="border-color:indigo;"/></a>
+    <h2><i>About Me</i></h2>
       <p>
-        Phone: 780-780-7800 </Br>
-        Email: Email@Email.com </Br>
-        Mailing: 12345 12St
+        Personal Skills:
+        <ul type="square">
+          <li>Organization</li>
+          <li>Attention to detial</li>
+          <li>Strong Desire to learn more</li>
+        </ul>
+      </p>
+      <p>
+        Professional Skills:
+        <ul type="square">
+          <li>Moderate C++ Coding experience</li>
+          <li>Moderate Python Coding experience</li>
+          <li>Skill 3</li>
+        </ul>   
+          <a href="https://www.nwpolytech.ca/">
+          <img src="Images/NWP logo.jpg" alt="NWP Logo " style="border-color: navy;"
+          width="200em" height="200em"/></a>
+      </p>
+      <p>
+        Education:
+        <ol type="a">
+          <li>Highschool: 2018 - 2023</li>
+          <li>College: 2023 - Current </li>
+        </ol>
       </p>
     <h3> Other Pages </h3>
-      </p>
+      <p id="Links">
         <a href= "Page2.html"> Page 2</a> <br/>
-        <a href= https://connorqr.github.io/cs3990w26_Roberts/Page3.html> Page 3</a>
-      <p>
-    
+        <a href= "Page3.html"> Page 3</a> <br>
+        <a href= "#Bottom"> Page Bottom</a> <br>
+        <a href= "#Top"> Page Top</a>
+      </p>
+      <div id="Bottom"></div> 
   </body>
 </html>
