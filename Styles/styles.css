@@ -3,16 +3,78 @@ h1 {
   background-color: rgb(216, 230, 91);
 }
 
+
+header{
+  margin: 1%;
+  width:auto;
+  height: 8em;
+  display: block;
+}
+
+
+div.menu{
+  margin: 1%;
+  width: auto;
+  height: 5em;
+  display: block;
+}
+
+
+.Aside1{
+  float: left;
+  clear: both;
+  position: sticky;
+  margin: 1em;
+  width: 5em;
+  height: 5em;
+}
+
+
+.Aside2{
+  float: left;
+  clear: left;
+  margin: 1%;
+  width: 5em;
+  height: 10em;
+}
+
+
+.Aside3{
+  float: right;
+  clear: both;
+  margin: 1%;
+  width: 5em;
+  height: 15em;
+}
+
+
+.MainContent{
+  margin: 1%;
+  display: block;
+}
+
+
+Footer{
+  position: fixed;
+  bottom: 0;
+  height: 6em;
+  width: auto;
+  display: block;
+}
+
+
 h2 {
   color: rgb(15, 91, 178);
   font-style: italic;
 }
+
 
 h3 {
   color: rgb(192, 108, 12);
   background-color: rgb(247, 248, 246);
   position: fixed; top: 0em; right: 10em;
 }
+
 
 h3.p3 {
   color: rgb(192, 108, 12);
@@ -21,9 +83,11 @@ h3.p3 {
   font-family: fantasy;
 }
 
+
 p {
   color: rgb(0, 0, 0);
 }
+
 
 p#Links {
   color: rgb(0, 0, 0);
@@ -31,21 +95,25 @@ p#Links {
   font-size: larger;
 }
 
+
 p.p3{
   color:aliceblue;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
+
 
 li.p3{
   color:aliceblue;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
 img.other{
   border-width: 3px;
   border-style: solid;
   position: absolute; right: 30em;
 }
+
 
 img.me{
   border-width: 3px;
@@ -54,6 +122,7 @@ img.me{
   clear: both;
 }
 
+
 body.class3{
   background-image: url("Stars 2.jpg");
   background-color: black;
@@ -61,3 +130,4 @@ body.class3{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
