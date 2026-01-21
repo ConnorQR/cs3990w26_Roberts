@@ -1,8 +1,3 @@
-* {
-  color: rgb(1, 1, 69);
-  background-color: rgb(215, 157, 224);
-}
-
 h1 {
   color: rgb(125, 24, 46);
   background-color: rgb(216, 230, 91);
@@ -33,12 +28,12 @@ p {
 p#Links {
   color: rgb(0, 0, 0);
   position: fixed; top: 5em; right: 15em;
+  font-size: larger;
 }
 
 p.p3{
   color:aliceblue;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-  
 }
 
 li.p3{
@@ -46,26 +41,23 @@ li.p3{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-img{
+img.other{
   border-width: 3px;
   border-style: solid;
   position: absolute; right: 30em;
-  !!! image sets the default location for all images
 }
 
 img.me{
   border-width: 3px;
   border-style: solid;
-  float: left !important;
-  clear: both !important;
+  float: left;
+  clear: both;
 }
 
 body.class3{
-  background-image: url("Images/Stars 2.jpg");
+  background-image: url("Stars 2.jpg");
   background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color:black !important;
-  !!! image not showing up in background for some reason. url should be correct
 }
