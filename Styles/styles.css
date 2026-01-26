@@ -1,56 +1,96 @@
-h1 {
-  color: rgb(125, 24, 46);
-  background-color: rgb(216, 230, 91);
-}
-
-
 header{
   margin: 1%;
   width:auto;
   height: 8em;
   display: block;
+  border-width: 2px;
+  border-style: solid;
+  padding: 1%;
+  background-color: rgb(209, 147, 228);
 }
 
 
 div.menu{
   margin: 1%;
   width: auto;
-  height: 5em;
+  height: 3em;
   display: block;
+  border-width: 2px;
+  border-style: solid;
+  padding: 1%;
+  background-color: rgb(209, 147, 228);
 }
 
 
 .Aside1{
   float: left;
-  clear: both;
   position: sticky;
-  margin: 1em;
-  width: 5em;
-  height: 5em;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  width: 6em;
+  height: 6em;
+  border-width: 2px;
+  border-style: solid;
+  background-color: rgb(209, 147, 228);
 }
 
 
 .Aside2{
   float: left;
   clear: left;
-  margin: 1%;
-  width: 5em;
+  
+  width: 6em;
   height: 10em;
+  border-width: 2px;
+  border-style: solid;
+  background-color: rgb(209, 147, 228);
 }
 
 
 .Aside3{
   float: right;
-  clear: both;
-  margin: 1%;
-  width: 5em;
-  height: 15em;
+  width: 6em;
+  height: 16.5em;
+  border-width: 2px;
+  border-style: solid;
+  background-color: rgb(209, 147, 228);
+  margin-right: 1%;
+  padding: 0.1em;
 }
 
 
 .MainContent{
-  margin: 1%;
+  width: 60em;
+  float: left;
+  height: 15em;
   display: block;
+  border-width: 2px;
+  border-style: solid;
+  padding: 1%;
+  background-color: rgb(209, 147, 228);
+}
+
+.S1{
+  margin: 1%;
+  width: auto;
+  height: 7em;
+  display: block;
+  border-width: 2px;
+  border-style: solid;
+  padding: 1%;
+  background-color: rgb(209, 147, 228);
+}
+
+.S2{
+  margin: 1%;
+  width: auto;
+  height: 7em;
+  display: block;
+  border-width: 2px;
+  border-style: solid;
+  padding: 1%;
+  background-color: rgb(209, 147, 228);
 }
 
 
@@ -60,6 +100,11 @@ Footer{
   height: 6em;
   width: auto;
   display: block;
+  border-width: 2px;
+  border-style: solid;
+  margin: 1%;
+  padding: 1%;
+  background-color: rgb(209, 147, 228);
 }
 
 
