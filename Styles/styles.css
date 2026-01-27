@@ -28,7 +28,7 @@ div.menu{
   margin-right: 1%;
   margin-bottom: 1%;
   margin-left: 1%;
-  width: 6em;
+  width: 8em;
   height: 6em;
   border-width: 2px;
   border-style: solid;
@@ -40,7 +40,7 @@ div.menu{
   position: absolute;
   margin-left: 1%;
   bottom: 7em;
-  width: 6em;
+  width: 8em;
   height: 10em;
   border-width: 2px;
   border-style: solid;
@@ -50,7 +50,7 @@ div.menu{
 
 .Aside3{
   float: right;
-  width: 6em;
+  width: 8em;
   height: 16.5em;
   border-width: 2px;
   border-style: solid;
@@ -60,7 +60,7 @@ div.menu{
 
 
 .MainContent{
-  width: 60em;
+  width: 56em;
   float: left;
   height: 15em;
   display: block;
@@ -97,14 +97,29 @@ div.menu{
   position: fixed;
   bottom: 0;
   margin: 1%;
-  width: auto;
-  height: 3em;
+  width: 76em;
+  height: 5em;
   display: block;
   border-width: 2px;
   border-style: solid;
-  padding: 1%;
+  padding: 0.3%;
   background-color: rgb(209, 147, 228);
 }
+
+.left{
+  float: left;
+  border-width: 2px;
+  border-style: outset;
+  margin: 0.6%;
+}
+
+.right{
+  float: right;
+  border-width: 2px;
+  border-style: outset;
+  margin: 0.6%;
+}
+
 
 p {
   color: rgb(0, 0, 0);
