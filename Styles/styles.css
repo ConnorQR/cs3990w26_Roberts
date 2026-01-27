@@ -9,8 +9,7 @@ header{
   background-color: rgb(209, 147, 228);
 }
 
-
-div.menu{
+.menu{
   margin: 1%;
   width: auto;
   height: 3em;
@@ -21,7 +20,6 @@ div.menu{
   background-color: rgb(209, 147, 228);
 }
 
-
 .Aside1{
   float: left;
   position: sticky;
@@ -31,22 +29,51 @@ div.menu{
   width: 8em;
   height: 6em;
   border-width: 2px;
-  border-style: solid;
   background-color: rgb(209, 147, 228);
 }
-
 
 .Aside2{
   position: absolute;
   margin-left: 1%;
+  padding-left: 1em;
+  padding-top: 0.5em;
   bottom: 7em;
-  width: 8em;
-  height: 10em;
+  width: 7em;
+  height: 9.5em;
   border-width: 2px;
   border-style: solid;
   background-color: rgb(209, 147, 228);
 }
 
+.listed{
+  margin: 0.1em;
+  background-color: rgb(147, 89, 164) !important;
+  width: fit-content;
+}
+
+.listedo{
+  margin: 0.1em;
+  background-color: rgb(200, 117, 225) !important;
+  width: fit-content;
+  list-style-image: url();
+  list-style: none;
+}
+
+.listede{
+  margin: 0.1em;
+  background-color: rgb(224, 99, 224) !important;
+  width: fit-content;
+  list-style-image: url();
+  list-style: none;
+}
+
+.listedc{
+  margin: 0.1em;
+  background-color: rgb(216, 181, 227) !important;
+  width: fit-content;
+  text-decoration: line-through;
+  list-style: url(Image/done.png);
+}
 
 .Aside3{
   float: right;
@@ -56,8 +83,16 @@ div.menu{
   border-style: solid;
   background-color: rgb(209, 147, 228);
   margin-right: 1%;
+  padding-left: 0.9em;
 }
 
+.list{
+  background-color: rgb(174, 120, 191);
+  text-decoration: none;
+  margin-top: 0;
+  width: fit-content;
+  padding-left: 1em;
+}
 
 .MainContent{
   width: 56em;
@@ -92,7 +127,6 @@ div.menu{
   background-color: rgb(209, 147, 228);
 }
 
-
 .Footer{
   position: fixed;
   bottom: 0;
@@ -110,27 +144,36 @@ div.menu{
   float: left;
   border-width: 2px;
   border-style: outset;
-  margin: 0.6%;
+  margin: 0.3%;
+  border-radius: 100px;
+  text-decoration: none;
+  padding: 0.4em;
+  background-color: rgb(185, 136, 210);
+  color: black;
+}
+
+.left:hover{
+  background-color: rgb(129, 74, 180);
 }
 
 .right{
   float: right;
   border-width: 2px;
   border-style: outset;
-  margin: 0.6%;
+  margin: 0.3%;
+  border-radius: 100px;
+  text-decoration: none;
+  padding: 0.4em;
+  background-color: rgb(185, 136, 210);
 }
 
+.right:hover{
+  background-color: rgb(129, 74, 180);
+}
 
 p {
   color: rgb(0, 0, 0);
 }
-
-img.other{
-  border-width: 3px;
-  border-style: solid;
-  position: absolute; right: 30em;
-}
-
 
 img.me{
   border-width: 3px;
