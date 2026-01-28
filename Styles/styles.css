@@ -123,6 +123,7 @@ header{
   border-style: solid;
   padding: 1%;
   background-color: rgb(209, 147, 228);
+  border-radius: 8px;
 }
 
 .S2{
@@ -134,6 +135,7 @@ header{
   border-style: solid;
   padding: 1%;
   background-color: rgb(209, 147, 228);
+  border-radius: 8px;
 }
 
 .Footer{
