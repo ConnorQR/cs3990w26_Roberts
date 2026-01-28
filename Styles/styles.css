@@ -37,12 +37,21 @@ header{
   margin-left: 1%;
   padding-left: 1em;
   padding-top: 0.5em;
-  bottom: 7em;
+  bottom: 7.8em;
   width: 7em;
-  height: 9.5em;
+  height: 9em;
   border-width: 2px;
   border-style: solid;
   background-color: rgb(209, 147, 228);
+}
+
+.ToDoList{
+  text-decoration: none;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+  width: fit-content;
+  padding-left: 1em;
+  padding-right: 0;
 }
 
 .listed{
@@ -72,13 +81,13 @@ header{
   background-color: rgb(216, 181, 227) !important;
   width: fit-content;
   text-decoration: line-through;
-  list-style: url(Image/done.png);
+  list-style: none;
 }
 
 .Aside3{
   float: right;
   width: 8em;
-  height: 16.5em;
+  height: 16em;
   border-width: 2px;
   border-style: solid;
   background-color: rgb(209, 147, 228);
@@ -97,7 +106,7 @@ header{
 .MainContent{
   width: 56em;
   float: left;
-  height: 15em;
+  height: 14.5em;
   display: block;
   border-width: 2px;
   border-style: solid;
@@ -137,6 +146,7 @@ header{
   border-width: 2px;
   border-style: solid;
   padding: 0.3%;
+  padding-bottom: 1em;
   background-color: rgb(209, 147, 228);
 }
 
@@ -154,25 +164,34 @@ header{
 
 .left:hover{
   background-color: rgb(129, 74, 180);
+  text-decoration: overline;
 }
 
 .right{
   float: right;
   border-width: 2px;
   border-style: outset;
-  margin: 0.3%;
   border-radius: 100px;
   text-decoration: none;
-  padding: 0.4em;
-  background-color: rgb(185, 136, 210);
+  padding: 0.2em;
+  margin-right: 1em;
+  width: 2em;
+  background-color: rgb(185, 136, 210);;
+  filter: grayscale(100%) brightness(65%);
 }
 
 .right:hover{
-  background-color: rgb(129, 74, 180);
+  filter: grayscale(0%);
 }
 
 p {
   color: rgb(0, 0, 0);
+}
+
+.A3P{
+  border-radius: 8px;
+  width: 6em;
+  height: 4em;
 }
 
 img.me{
@@ -180,5 +199,21 @@ img.me{
   border-style: solid;
   float: left;
   clear: both;
+}
+
+.listedc::after,
+.listede::after,
+.listedo::after{
+  content:" \2717";
+}
+
+.listede::before,
+.listedo::before{
+  content:" \2610";
+}
+
+
+.listedc::before{
+  content:" \2611";
 }
 
