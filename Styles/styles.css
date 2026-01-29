@@ -1,221 +1,129 @@
-header{
-  margin: 1%;
-  width:auto;
-  height: 7em;
-  display: block;
-  border-width: 2px;
-  border-style: solid;
+article:first-of-type{
+  background-color: rgb(66, 37, 2) !important;
+  color: rgb(245, 201, 147);
   padding: 1%;
-  background-color: rgb(209, 147, 228);
-}
-
-.menu{
-  margin: 1%;
-  width: auto;
-  height: 3em;
-  display: block;
-  border-width: 2px;
-  border-style: solid;
-  padding: 1%;
-  background-color: rgb(209, 147, 228);
-}
-
-.Aside1{
-  float: left;
-  position: sticky;
-  margin-right: 1%;
   margin-bottom: 1%;
-  margin-left: 1%;
-  width: 8em;
-  height: 6em;
-  border-width: 2px;
-  background-color: rgb(209, 147, 228);
 }
 
-.Aside2{
-  position: absolute;
-  margin-left: 1%;
-  padding-left: 1em;
-  padding-top: 0.5em;
-  bottom: 7.8em;
-  width: 7em;
-  height: 9em;
-  border-width: 2px;
-  border-style: solid;
-  background-color: rgb(209, 147, 228);
-}
-
-.ToDoList{
-  text-decoration: none;
-  margin-right: 1em;
-  margin-bottom: 0.5em;
-  width: fit-content;
-  padding-left: 1em;
-  padding-right: 0;
-}
-
-.listed{
-  margin: 0.1em;
-  background-color: rgb(147, 89, 164) !important;
-  width: fit-content;
-}
-
-.listedo{
-  margin: 0.1em;
-  background-color: rgb(200, 117, 225) !important;
-  width: fit-content;
-  list-style-image: url();
-  list-style: none;
-}
-
-.listede{
-  margin: 0.1em;
-  background-color: rgb(224, 99, 224) !important;
-  width: fit-content;
-  list-style-image: url();
-  list-style: none;
-}
-
-.listedc{
-  margin: 0.1em;
-  background-color: rgb(216, 181, 227) !important;
-  width: fit-content;
-  text-decoration: line-through;
-  list-style: none;
-}
-
-.Aside3{
-  float: right;
-  width: 8em;
-  height: 16em;
-  border-width: 2px;
-  border-style: solid;
-  background-color: rgb(209, 147, 228);
-  margin-right: 1%;
-  padding-left: 0.9em;
-}
-
-.list{
-  background-color: rgb(174, 120, 191);
-  text-decoration: none;
-  margin-top: 0;
-  width: fit-content;
-  padding-left: 1em;
-}
-
-.MainContent{
-  width: 56em;
-  float: left;
-  height: 14.5em;
-  display: block;
-  border-width: 2px;
-  border-style: solid;
+h2 ~ .task1{
+  background-color: rgb(245, 201, 147);
+  color: rgb(66, 37, 2);
   padding: 1%;
-  background-color: rgb(209, 147, 228);
+  margin-bottom: 1%;
 }
 
-.S1{
-  margin: 1%;
-  width: auto;
-  height: 5em;
-  display: block;
-  border-width: 2px;
-  border-style: solid;
+h2 ~ .task2{
+  background-color: rgb(245, 201, 147);
+  color: rgb(66, 37, 2);
   padding: 1%;
-  background-color: rgb(209, 147, 228);
-  border-radius: 8px;
+  margin-bottom: 1%;
 }
 
-.S2{
-  margin: 1%;
-  width: auto;
-  height: 5em;
-  display: block;
-  border-width: 2px;
-  border-style: solid;
+article:last-of-type{
+  background-color: rgb(245, 201, 147);
+  color: rgb(66, 37, 2);
   padding: 1%;
-  background-color: rgb(209, 147, 228);
-  border-radius: 8px;
+  margin-bottom: 1%;
 }
 
-.Footer{
-  position: fixed;
-  bottom: 0;
-  margin: 1%;
-  width: 76em;
-  height: 5em;
-  display: block;
+h3 ~ .task1{
+  background-color: rgb(66, 37, 2);
+  color: rgb(245, 201, 147);
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+h3 ~ .task2{
+  background-color: rgb(66, 37, 2);
+  color: rgb(245, 201, 147);
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+.task1:hover{
+  border-color: red;
   border-width: 2px;
   border-style: solid;
-  padding: 0.3%;
-  padding-bottom: 1em;
-  background-color: rgb(209, 147, 228);
 }
-
-.left{
-  float: left;
-  border-width: 2px;
-  border-style: outset;
-  margin: 0.3%;
-  border-radius: 100px;
-  text-decoration: none;
-  padding: 0.4em;
-  background-color: rgb(185, 136, 210);
-  color: black;
-}
-
-.left:hover{
-  background-color: rgb(129, 74, 180);
-  text-decoration: overline;
-}
-
-.right{
-  float: right;
-  border-width: 2px;
-  border-style: outset;
-  border-radius: 100px;
-  text-decoration: none;
+.task1 >div:hover{
+  background-color: orange;
+  border-radius: 10px;
+  width: fit-content;
   padding: 0.2em;
-  margin-right: 1em;
-  width: 2em;
-  background-color: rgb(185, 136, 210);;
-  filter: grayscale(100%) brightness(65%);
 }
 
-.right:hover{
-  filter: grayscale(0%);
+.task2:hover{
+  border-color: pink;
+  border-width: 2px;
+  border-style: dotted;
 }
 
-p {
-  color: rgb(0, 0, 0);
+h2 ~ .task2 li:first-of-type{
+  background-color: purple;
+  width: fit-content;
 }
 
-.A3P{
-  border-radius: 8px;
-  width: 6em;
-  height: 4em;
+h2 ~ .task2 li:not(.special) {
+  color: red;
+  width: fit-content;
 }
 
-img.me{
-  border-width: 3px;
-  border-style: solid;
-  float: left;
-  clear: both;
+h2 ~ .task2 li:nth-of-type(4) {
+  font-style: italic;
+  width: fit-content;
 }
 
-.listedc::after,
-.listede::after,
-.listedo::after{
-  content:" \2717";
+h2 ~ .task2 li:nth-child(odd) {
+  font-weight: bold ;
+  width: fit-content;
 }
 
-.listede::before,
-.listedo::before{
-  content:" \2610";
+h4:has(blockquote:hover){
+  color: rgb(184, 59, 2);
 }
 
-
-.listedc::before{
-  content:" \2611";
+h3 ~ .task2 li:nth-child(even) {
+  list-style-type:lower-greek ;
+  width: fit-content;
 }
 
+h3 ~ .task3{
+  background-color: rgb(66, 37, 2);
+  color: rgb(245, 201, 147);
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+h3 ~ .task3 .wrong{
+  background-color: rgb(82, 49, 10);
+  color: rgb(245, 201, 147);
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+.task3 .correct{
+  background-color: rgb(82, 49, 10);
+  color: rgb(245, 201, 147);
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+.task3 .wrong::before {
+  content: "\2717";
+  position: absolute;
+  left: 50%;
+  transform: scale(200%);
+  font-size: xx-large;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.task3 .correct::before {
+  content: "\2714";
+  position: absolute;
+  left: 50%;
+  transform: scale(200%);
+  font-size: xx-large;
+  font-weight: bold;
+  color: green;
+}
