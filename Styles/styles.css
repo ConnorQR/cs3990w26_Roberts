@@ -36,10 +36,10 @@ header{
   position: absolute;
   margin-left: 1%;
   padding-left: 1em;
-  padding-top: 0.5em;
+  padding-top: 0.2em;
   bottom: 7.8em;
   width: 7em;
-  height: 9em;
+  height: 9.3em;
   border-width: 2px;
   border-style: solid;
   background-color: rgb(209, 147, 228);
@@ -55,9 +55,10 @@ header{
 }
 
 .listed{
-  margin: 0.1em;
+  margin: 0.2em;
   background-color: rgb(147, 89, 164) !important;
   width: fit-content;
+  display: inline;
 }
 
 .listedo{
@@ -95,12 +96,18 @@ header{
   padding-left: 0.9em;
 }
 
-.list{
-  background-color: rgb(174, 120, 191);
+
+.list {
   text-decoration: none;
-  margin-top: 0;
-  width: fit-content;
-  padding-left: 1em;
+  margin-top: 1%;
+  padding-left: 0em;
+  list-style-position: inside;
+}
+
+.list li{
+  background-color: rgb(174, 120, 191) !important;
+  margin-top: 3%;
+  width: 5em;
 }
 
 .MainContent{
@@ -201,6 +208,7 @@ img.me{
   border-style: solid;
   float: left;
   clear: both;
+  position: sticky;
 }
 
 .listedc::after,
