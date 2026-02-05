@@ -1,6 +1,8 @@
 .buttons{
   display: flex;
   background-color: rgb(170, 114, 222);
+  justify-content: center;
+  align-items: center;
 }
 
 .Map{
@@ -10,16 +12,20 @@
 .facts{
   display: flex;
   background-color: rgb(177, 128, 223);
+  justify-content: flex-start;
 }
 
 .Job{
   display: flex;
   background-color: blueviolet;
+  justify-content: flex-end;
 }
 
 .Footer{
   display: flex;
   background-color: blueviolet;
+  position: fixed;
+  bottom: 0;
 }
 
 span:first-of-type:hover ~ .correct{
