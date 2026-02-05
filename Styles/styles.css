@@ -1,219 +1,29 @@
-article:hover > div:hover {
-  filter:opacity(1) !important;
+.buttons{
+  display: flex;
+  background-color: rgb(170, 114, 222);
 }
 
-article:hover > div {
-  filter:opacity(0.5);
+.Map{
+  display: flex;
 }
 
-article:first-of-type{
-  background-color: rgb(66, 37, 2) !important;
-  color: rgb(245, 201, 147);
-  padding: 1%;
-  margin-bottom: 1%;
+.facts{
+  display: flex;
+  background-color: rgb(177, 128, 223);
 }
 
-h2 ~ .task1{
-  background-color: rgb(245, 201, 147);
-  color: rgb(66, 37, 2);
-  padding: 1%;
-  margin-bottom: 1%;
+.Job{
+  display: flex;
+  background-color: blueviolet;
 }
 
-h2 ~ .task2{
-  background-color: rgb(245, 201, 147);
-  color: rgb(66, 37, 2);
-  padding: 1%;
-  margin-bottom: 1%;
-}
-
-article:last-of-type{
-  background-color: rgb(245, 201, 147);
-  color: rgb(66, 37, 2);
-  padding: 1%;
-  margin-bottom: 1%;
-}
-
-h3 ~ .task1{
-  background-color: rgb(66, 37, 2);
-  color: rgb(245, 201, 147) ;
-  padding: 1%;
-  margin-bottom: 1%;
-}
-
-h3 ~ .task2{
-  background-color: rgb(66, 37, 2);
-  color: rgb(245, 201, 147);
-  padding: 1%;
-  margin-bottom: 1%;
-}
-
-.task1:hover{
-  border-color: red;
-  border-width: 2px;
-  border-style: solid;
-}
-
-.task1 div{
-  display: none;
-  position: relative;
-}
-
-.task1 div::before{
-  display: block;
-  background: orange;  
-  transform: rotate(45deg);
-  content:"";
-  width: 1em;
-  height: 1em;
-  position: absolute;
-  bottom: -8px;
-  left: 40px;
-}
-
-.task1:hover div{
-  display:block;
-  background-color: orange;
-  border-radius: 10px;
-  width: fit-content;
-  padding: 0.2em;
-  margin: 0.5em;
-}
-
-.task2:hover{
-  border-color: pink;
-  border-width: 2px;
-  border-style: dotted;
-}
-
-h2 ~ .task2 li:first-of-type{
-  background-color: orange;
-  width: fit-content;
-}
-
-h2 ~ .task2 li:not(.special) {
-  color: red;
-  width: fit-content;
-}
-
-h2 ~ .task2 li:nth-of-type(4) {
-  font-style: italic;
-  width: fit-content;
-}
-
-h2 ~ .task2 li:nth-child(odd) {
-  font-weight: bold ;
-  width: fit-content;
-}
-
-.task1:has(blockquote:hover){
-  color: rgb(184, 59, 2);
-}
-
-blockquote{
-  color: rgb(245, 201, 147) !important;
-  padding-bottom: 1.5em;
-  font-style: italic;
-}
-
-blockquote::before{
-  display: block;
-  content: "\201C";
-  background-color: orange;
-  border-radius: 50px;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  font-size: xx-large;
-}
-
-blockquote::after{
-  display: block;
-  content: "\201D";
-  background-color: orange;
-  border-radius: 50px;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  float: right;
-  font-size: xx-large;
-}
-
-blockquote:hover:before{
-  background-color: rgb(184, 59, 2);
-}
-
-blockquote:hover:after{
-  background-color: rgb(184, 59, 2);
-}
-
-
-h3 ~ .task2 li:nth-child(even)::marker {
-  content: "\1F604";
-  width: fit-content;
-}
-
-h3 ~ .task3{
-  background-color: rgb(66, 37, 2);
-  color: rgb(245, 201, 147);
-  padding: 1%;
-  margin-bottom: 1%;
-}
-
-h3 ~ .task3 .wrong{
-  background-color: rgb(82, 49, 10);
-  color: rgb(245, 201, 147);
-  padding: 1%;
-  margin: 1%;
-}
-
-.task3 .correct{
-  background-color: rgb(82, 49, 10);
-  color: rgb(245, 201, 147);
-  padding: 1%;
-  margin: 1%;
-}
-
-.task3 .wrong::before {
-  content: "\2717";
-  position: absolute;
-  left: 50%;
-  transform: scale(200%);
-  font-size: xx-large;
-  font-weight: bold;
-  color: #ff0000;
-}
-
-.task3 .correct::before {
-  content: "\2714";
-  position: absolute;
-  left: 50%;
-  transform: scale(200%);
-  font-size: xx-large;
-  font-weight: bold;
-  color: green;
-}
-
-span:first-of-type:before{
-  content:">> ";
-}
-
-span:last-of-type:before{
-  content:" / ";
+.Footer{
+  display: flex;
+  background-color: blueviolet;
 }
 
 span:first-of-type:hover ~ .correct{
   background-color: rgb(202, 117, 14);
 }
 
-span:first-of-type:hover{
-  background-color: rgb(202, 117, 14);
-}
 
-span:last-of-type:hover ~ .wrong{
-  background-color: rgb(202, 117, 14);
-}
-
-span:last-of-type:hover{
-  background-color: rgb(202, 117, 14);
-}
