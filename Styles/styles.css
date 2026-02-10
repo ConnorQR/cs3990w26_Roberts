@@ -1,30 +1,150 @@
-.buttons{
+html, body{
+  margin: 0;
+}
+
+Header{
+  text-align: center;
   display: flex;
+  background-color: rgb(170, 114, 222); 
+}
+
+.Info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.Center{
+  flex: 2;
+}
+
+.Buttons{
+  display: flex;
+  justify-content: space-around;
+  perspective: 300px;
+}
+
+.Buttons p{
+  width: fit-content;
   background-color: rgb(170, 114, 222);
-  justify-content: center;
-  align-items: center;
+  border-radius: 100px;
+  border-color: lightgrey;  
+  border-style: solid;
+  padding: 1%;
+  transform: skewX(-10deg);
+  box-shadow: -1px 4px 6px 0px; 
+}
+
+.Buttons p:hover{
+  width: fit-content;
+  background-color: rgb(170, 114, 222);
+  border-radius: 100px;
+  border-color: lightgrey;  
+  border-style: solid;
+  padding: 1%;
+  background-image: linear-gradient(rgb(170, 114, 222), rgb(103, 46, 156));
+  transform: skewX(0deg);
+  box-shadow: -1px 4px 6px 0px; 
 }
 
 .Map{
   display: flex;
+  justify-content: center;
+  align-self: center;
 }
 
 .facts{
+  flex: 1;
   display: flex;
-  background-color: rgb(177, 128, 223);
+  justify-content: space-around;
   justify-content: flex-start;
+  align-content: center;
+}
+
+.facts ul{
+  padding: 0;
+}
+
+.facts li{
+  color: white;
+  background-color: blueviolet;
+  margin-bottom: 2%;
+  list-style-type: none;
+  width: 100%;
 }
 
 .Job{
+  flex: 1;
   display: flex;
   background-color: blueviolet;
   justify-content: flex-end;
+  align-content: center;
+  flex-direction: column;
+  flex-flow: row wrap;
+}
+
+.Job > p{
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.Jobs{
+  color: white;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5%;  
+  position: relative;
+}
+
+.Jobs span{
+  word-break: break-all;
+}
+
+.Jobs > p{
+  text-align: right;
+}
+
+.Work{
+  padding: 5%;
+  background-color: purple;
+  border-color: lightgray;
+  border-top-right-radius: 30px;
+  position: relative;
+}
+
+.RedTitle{
+  position: absolute;
+  padding: 0.5%;
+  left: 0;
+  top: 0;
+  background-color: red;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.RedTitle p, .Title p{
+  margin: 0;
+}
+
+.Title{
+  background-color: green;
+  position: absolute;
+  padding: 0.5%;
+  left: 0;
+  top: 0;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 .Footer{
   display: flex;
   background-color: blueviolet;
   position: fixed;
+  width: 99%;
+  height: 5%;
   bottom: 0;
 }
 
