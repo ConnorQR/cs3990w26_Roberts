@@ -22,6 +22,7 @@ Header h1{
 
 .Center{
   flex: 2;
+  padding-left: 5%;
 }
 
 .Buttons{
@@ -266,9 +267,11 @@ Header h1{
   .facts ul{
     width: 100%;
   }
+
   .Info{
     flex-direction: column;
   }
+
   .Jobs{
     flex-direction: column;
     width: 80%;
