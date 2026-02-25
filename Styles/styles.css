@@ -27,7 +27,7 @@ html{
   }
   p{
     margin: 0% 3% 15% 3%;
-    font-size: small;
+    font-size: smaller;
   }
   a{
     text-decoration: none;
@@ -56,6 +56,7 @@ header{
   background-image: url('techheader.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   button{
     background-color: rgb(222, 222, 98);
   }
@@ -63,10 +64,7 @@ header{
     text-decoration: none;
   }
   p{
-    margin-left: 15%;
-  }
-  h1{
-    text-wrap-mode: nowrap ;
+    justify-self: end;
   }
 }
 
@@ -75,13 +73,17 @@ header, footer{
   border-radius: 1px;
   border-color: black;
   margin-bottom: 5px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
 }
 
 footer{
   background-color: purple;
   color: white;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  p:last-of-type{
+    justify-self: end;
+  }
+  
 }
 
 .program1, .program2, .program3, .program4{
