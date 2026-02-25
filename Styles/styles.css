@@ -1,281 +1,112 @@
-html, body{
-  margin: 0;
+html{
+  scroll-behavior: smooth;
 }
 
-Header{
-  text-align: center;
-  display: flex;
-  background-color: rgb(170, 114, 222); 
-}
-
-Header h1{
-  width: 100%;
-  text-align: center;
-  color: white;
-}
-
-.Info{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.Center{
-  flex: 2;
-  padding-left: 5%;
-}
-
-.Buttons{
-  display: flex;
-  perspective: 300px;
-  text-decoration: none;
-}
-
-.Buttons p{
-  margin-left: 3%;
-  width: fit-content;
-  background-color: rgb(170, 114, 222);
-  border-radius: 100px;
-  border-color: lightgrey;  
+.card1, .card2, .card3{
   border-style: solid;
-  padding: 1%;
-  transform: skewX(-10deg);
-  box-shadow: -1px 4px 6px 0px; 
-}
-
-.Buttons a{
-  text-decoration: none;
-}
-
-.Buttons p:hover{
-  width: fit-content;
-  background-color: rgb(170, 114, 222);
-  border-radius: 100px;
-  border-color: lightgrey;  
-  border-style: solid;
-  padding: 1%;
-  background-image: linear-gradient(rgb(170, 114, 222), rgb(103, 46, 156));
-  transform: skewX(0deg);
-  box-shadow: -1px 4px 6px 0px; 
-}
-
-.Buttons a:hover{
-  color: white;
-}
-
-.Alberta{
-  margin-left: 3%;
-}
-
-.facts{
-  flex: 1;
-  display: flex;
-  justify-content: space-around;
-  justify-content: flex-start;
-  align-content: center;
-}
-
-.facts ul{
-  padding: 0;
-}
-
-.facts li{
-  color: white;
-  background-color: blueviolet;
-  margin-bottom: 2%;
-  list-style-type: none;
-  width: 100%;
-}
-
-.facts li:hover{
-  color: white;
-  background-color: rgb(100, 18, 178);
-  margin-bottom: 2%;
-  list-style-type: none;
-  width: 100%;
-}
-
-.Job{
-  flex: 1;
-  display: flex;
-  background-color: blueviolet;
-  align-content: center;
-  flex-direction: column;
-  flex-flow: row wrap;
-}
-
-.Job > p{
-  color: white;
-  text-align: center;
-  width: 100%;
-}
-
-.Jobs{
-  color: white;
-  width: 40%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 5%;  
+  border-radius: 1px;
+  border-color: black;
+  margin-right: 5px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
   position: relative;
+  img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 90%;
+    height: 40%;
+    margin: 5%;
+  }
+  button{
+    background-color: rgb(222, 222, 98);
+    margin: 5%;
+  }
+  a{
+    text-decoration: none;
+  }
+  p{
+    margin: 5%;
+  }
+  span {
+  position: absolute;
+  font-size: 100%;
+  top: 25%;
+  right: 0%;
+  color: white; 
+  background-color: rgba(70, 70, 70, 0.5); 
+  width: 80%;
+  height: 5%;
+  margin-right: 5%;
+  padding: 5% 5% 10% 5%;  
+  }
 }
 
-.Jobs span{
-  word-break: break-all;
+.cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
 }
 
-.Jobs > p{
-  text-align: right;
+header{
+  background-image: url('techheader.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  button{
+    background-color: rgb(222, 222, 98);
+  }
+  a{
+    text-decoration: none;
+  }
 }
 
-.Work{
-  padding: 5%;
+header, footer{
+  border-style: solid;
+  border-radius: 1px;
+  border-color: black;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer{
   background-color: purple;
-  border-color: lightgray;
-  border-top-right-radius: 30px;
-  position: relative;
-}
-
-.RedTitle{
-  position: absolute;
-  padding: 0.5%;
-  left: 0;
-  top: 0;
-  background-color: red;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-}
-
-.RedTitle p, .Title p{
-  margin: 0;
-}
-
-.Title{
-  background-color: green;
-  position: absolute;
-  padding: 0.5%;
-  left: 0;
-  top: 0;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-}
-
-.Footer{
-  display: flex;
-  background-color: blueviolet;
-  position: fixed;
-  width: 100%;
-  height: 7%;
-  bottom: 0;
-}
-
-.Footer span{
-  position: absolute;
-  right: 0;
-  text-align: center;
-}
-
-.Home{
-  display: none;
-}
-
-.Pro{
-  display: none;
-}
-
-.Holiday{
-  display: none;
-}
-
-.Park{
-  display: none;
-}
-
-.Home:target {
-  display: block;
-}
-
-.Pro:target {
-  display: block;
-}
-
-.Holiday:target {
-  display: block;
-}
-
-.Park:target {
-  display: block;
-}
-
-.Pro ul{
-  list-style-type: none;
-}
-
-.ab{
-  display: none;
-  width: fit-content;
-}
-
-.AB:hover > .ab{
-  display: inline;
-  font-style: italic;
-  margin: 0;
-  padding: 0;
-}
-
-.bc{
-  display: none;
-}
-
-.BC:hover > .bc{
-  display: inline;
-  font-style: italic;
-  margin: 0;
-  padding: 0;
-}
-
-.Map{
-  display: block
-}
-
-.Center:has(:target) .Map{
-  display: none;
-}
-
-.Dropdown{
-  display: none;
-  background-color: blueviolet;
-}
-
-.Dropdown a{
-  padding: 5%;
-  background-color: blueviolet;
-}
-
-.Dropdown:hover > a:hover{
   color: white;
-  background-color: rgb(87, 14, 156);
 }
 
-.Alberta:hover > .Dropdown{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
+.program1, .program2, .program3, .program4{
+  margin-right: 5px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  span{
+    display: none;
+  }
+  img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 90%;
+    height: 50%;
+    margin: 5%;
+    &:hover{
+      width: 100%;
+      height: 60%;
+      margin: 0%;
+    }
+  }
+  &:hover{
+    span{
+      display: block;
+      margin: 5%;
+    }
+  }
+  p{
+    margin: 5%;
+  }
 }
 
-@media screen and (orientation: portrait){
-  .facts ul{
-    width: 100%;
-  }
-
-  .Info{
-    flex-direction: column;
-  }
-
-  .Jobs{
-    flex-direction: column;
-    width: 80%;
-  }
+.programs{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: space-evenly;
+  perspective: none;
 }
-
-
