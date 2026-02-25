@@ -21,17 +21,21 @@ html{
   button{
     background-color: rgb(222, 222, 98);
     margin: 5%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%
+  }
+  p{
+    margin: 0% 3% 15% 3%;
+    font-size: small;
   }
   a{
     text-decoration: none;
   }
-  p{
-    margin: 5%;
-  }
   span {
   position: absolute;
   font-size: 100%;
-  top: 25%;
+  top: 28%;
   right: 0%;
   color: white; 
   background-color: rgba(70, 70, 70, 0.5); 
@@ -57,6 +61,12 @@ header{
   }
   a{
     text-decoration: none;
+  }
+  p{
+    margin-left: 15%;
+  }
+  h1{
+    text-wrap-mode: nowrap ;
   }
 }
 
