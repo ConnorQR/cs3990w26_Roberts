@@ -1,107 +1,218 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<link rel="stylesheet" href="Styles/styles.css" /><html><head></head><body>
+<link rel="stylesheet" href="Styles/styles.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+  <head>
+    <script>
+      function Buttons(username){
+        if (username == "admin"){
+          document.getElementById("Hi").classList.remove("hide");
+          document.getElementById("Animal").classList.remove("hide");
+          document.getElementById("Log").classList.add("hide");
+        }
+        else if (username == "student"){
+          document.getElementById("Hi").classList.remove("hide");
+          document.getElementById("Animal").classList.add("hide");
+          document.getElementById("Log").classList.add("hide");
+        }
+        else{
+          document.getElementById("Hi").classList.add("hide");
+          document.getElementById("Animal").classList.add("hide");
+          document.getElementById("Log").classList.add("hide");
+        }
+      }
 
-  <header>
-    <h1>
-      Computer Science is your dream?
-    </h1>
-    <p>
-      Our Leading-edge programs offer practical connections at every step, balacing classroom theory and hands-on learning to produce confieden, knowledgeable and skilled professionals <br>
-      <button>
-        <a href="#cards">
-        Browse NWP Programs</a>
-      </button>
-    </p>
-  </header>
-  <div id="cards" class="cards">
-    <div class="card1">
-      <img src="Images/Tech2.jpg">
-      <span>
-        Computer Systems Technology (Certificate)
-      </span>
-      <p>
-        Computer professionals must have good reasoning and logical problem solving abilities, be observant, alert to detail, and tenacious in pursuing problems to completion. The Computer Science programs at Northwestern Polytechnic offer students an opportunity to integrate extensive software development skills with hardware skills. Emphasis in various programs include: computer graphics and image processing, digital hardware, data communications and networking. Hardware facilities include dedicated circuit design and robotics lab, data communications and networking lab, as well as six general access computer labs. As a graduate of the two-year diploma at Northwestern Polytechnic, students are qualified for positions in development including hardware and networking components, game programming, database applications, PC support, networking specialist, financial systems development, etc. Typically, graduates work as programmer analytics and network administrators.
-      </p>
-      <button>
-        <a href="https://www.nwpolytech.ca/program/computer-systems-technology-certificate">
-        visit NWP site</a>
-      </button>
-    </div>
-    <div class="card2">
-      <img src="Images/Tech1.jpg">
-      <span>
-        Computer Systems Technology (Diploma)
-      </span>
-      <p>
-        The Computer Science programs at Northwestern Polytechnic offer students an opportunity to integrate extensive software development skills with hardware skills. Emphasis in various programs include: computer graphics and image processing, digital hardware, data communications and networking. Hardware facilities include dedicated circuit design and robotics lab, data communications and networking lab, as well as six general access computer labs. As a graduate of the two-year diploma at Northwestern Polytechnic, students are qualified for positions in development including hardware and networking components, game programming, database applications, PC support, networking specialist, financial systems development, etc. Typically, graduates work as programmer analytics and network administrators.
-      </p>
-      <button>
-        <a href="https://www.nwpolytech.ca/program/computer-systems-diploma">
-        visit NWP site</a>
-      </button>
-    </div>
-    <div class="card3">
-      <img src="Images/Tech3.jpg">
-      <span>
-        Bachelor of Computing Science (Degree)
-      </span>
-      <p>
-        The Bachelor of Computing Science program gives learners a solid foundation in the technical, communication and hands-on skills needed to excel as a computing science professional. Explore a myriad of different areas such as computer games, networking and communications, big data, cloud computing, database development, artificial intelligence, machine learning, robotics, computer graphics, and mobile applications. Virtually every industry in the world makes use of computer technology and computing science graduates are essential in developing the applications that drive those industries further.
-      </p>
-      <button>
-        <a href="https://www.nwpolytech.ca/program/computing-science-degree">
-        visit NWP site</a>
-      </button>
-    </div>
-  </div>
-  
-  <div class="programs">
-    <div class="program1">
-      <img src="Images/intro.jpg">
-      <p>
-        Introduction to Computer Science
-      </p>
-      <span> 
-        Credits: 3 <br> Hours: 90
-      </span>
-    </div>
-    <div class="program2">
-      <img src="Images/datastrucs.png">
-      <p>
-        Elementary Data Structures
-      </p>
-      <span> 
-        Credits: 3 <br> Hours: 90
-      </span>
-    </div>
-    <div class="program3">
-      <img src="Images/BAstats.jpg">
-      <p>
-        Introduction to Applied Statistics
-      </p>
-      <span> 
-        Credits: 3 <br> Hours: 90
-      </span>
-    </div>
-    <div class="program4">
-      <img src="Images/Programing.jpg">
-      <p>
-        Practical Programing Methodology
-      </p>
-      <span> 
-        Credits: 3 <br> Hours: 90
-      </span>
-    </div>
-  </div>
+      function Login(){
+        document.getElementById("Log2").classList.add("hide");
+        let username = prompt("Enter Username");
+        if( username == "admin"){
+          alert(`Hello ${username}`);
+        } 
+        else if(username == "student"){
+          alert(`Hello ${username}`);
+        }
+        else{
+          alert("I dont know you");
+          document.getElementById("Log2").classList.remove("hide");
+        }
+      Buttons(username);
+      }
 
-  <footer>
-    <p>
-      2025
-    </p>
-    <p>
-      Made for NWP with love and CSS Grid
-    </p>
-  </footer>
+      function Hi(){
+        let lan = prompt("Enter Language");
+        switch (lan){
+          case "Eng":
+            message = "Hello!"
+            break;
+          case "Fr":
+            message = "Bonjour!"
+            break;
+          case "De":
+            message = "Hallo!"
+            break;
+          case "Spa":
+            message = "Hola!"
+            break;
+          default:
+            message = "Sorry But I do not speak that language"
+        }
+        alert(`${message}`)
+      }
 
-    </body></html>
+      function Animal(){
+        let age = prompt("Enter Age");
+        document.getElementById("18").classList.add("hide");
+        document.getElementById("Cat").classList.add("hide");
+        document.getElementById("Dog").classList.add("hide");
+        document.getElementById("Frog").classList.add("hide");
+        document.getElementById("Mouse").classList.add("hide");
+        if (age >= 18){
+          document.getElementById("18").classList.remove("hide");
+          if (age < 55){
+            let lan = prompt("Enter Animal");
+            switch (lan){
+              case "Cat":
+                document.getElementById("Cat").classList.remove("hide");
+                break;
+              case "Dog":
+                document.getElementById("Dog").classList.remove("hide");
+                break;
+              case "Frog":
+                document.getElementById("Frog").classList.remove("hide");
+                break;
+              case "Mouse":
+                document.getElementById("Mouse").classList.remove("hide");
+                break;
+              default:
+                message = "Sorry But I do not know that Animal"
+            }
+          }
+          else if (age > 55){
+            document.getElementById("55").classList.remove("hide");
+          }
+        }
+        else if (age < 18){
+          alert("Content is not available due to age restrictions");
+        }
+      }
+
+      function NWP(){
+        let age = prompt("Enter Age");
+        let year = prompt("Enter Year of Admission to NWP");
+        age = 4 + parseInt(age);
+        year = 4 + parseInt(year);
+        alert(`You will complete your Bachelor Degree in CS at Age: ${age} in Year: ${year}`);
+      }
+
+      function XD(){
+        let age = prompt("Enter Age");
+        let port = prompt("Enter Number of portfolios");
+        if (age >= 14 && age <= 18){
+          if (port >= 5 && port <= 10){
+            alert("You are Eliagble for a 10% discount on Adobe XD")
+          }
+        }
+        if (age > 18){
+          if (port >= 10 && port <= 20){
+            alert("You are Eliagble for a 7% discount on Adobe XD")
+          }
+        }
+      }
+
+      function QA(){
+        let age = prompt("Enter Age");
+        let port = prompt("Enter Number of portfolios");
+        if (age >= 14 && age <= 18){
+          if (port >= 5 && port <= 10){
+            alert("You are Eliagble for a 10% discount on Adobe QA Pro")
+          }
+        }
+        if (age > 18){
+          if (port >= 10 && port <= 20){
+            alert("You are Eliagble for a 7% discount on Adobe QA Pro")
+          }
+        }
+      }
+
+      function Login2(){
+        document.getElementById("Log").classList.add("hide");
+        let user = prompt("Enter Username");
+        if( user == "admin" || user == "Admin" || user == "ADMIN" ){
+          let pass = Math.floor(Math.random() * (999999 - 100000 + 1)) + 100000;
+          alert(`password: ${pass}`);
+          for (let i = 1; i <= 2; i++){
+            let password = prompt("Enter Password");
+            if(pass == password){
+              break;
+            }
+            else{
+              if( i == 1){
+                alert("Wrong Password Enter. Please Try Again");
+              }
+              else{
+                alert("Incorrect Pasword entered too many times");
+                document.getElementById("Log").classList.remove("hide");
+                return;
+              }
+            }
+          }
+          NWP()
+        } 
+        else if(user == "designer"){
+          for (let i = 1; i <= 3; i++){
+            let password = prompt("Enter Password");
+            if(111 == password){
+              break;
+            }
+            else{
+              if( i == 1 || i == 2){
+                alert("Wrong Password Enter. Please Try Again");
+              }
+              else{
+                alert("Incorrect Pasword entered too many times");
+                document.getElementById("Log").classList.remove("hide");
+                return;
+              }
+            }
+          }
+          XD();
+        }
+        else if(user == "tester"){
+          for (let i = 1; i <= 3; i++){
+            let password = prompt("Enter Password");
+            if(222 == password){
+              break;
+            }
+            else{
+              if( i == 1 || i == 2){
+                alert("Wrong Password Enter. Please Try Again");
+              }
+              else{
+                alert("Incorrect Pasword entered too many times");
+                document.getElementById("Log").classList.remove("hide");
+                return;
+              }
+            }
+          }
+          QA();
+        }
+        else{
+          alert("No such user found");
+        }
+      }
+
+      
+    </script>
+  </head>
+  <body>
+    <button onclick="Login()" id="Log" class=""> Part 1. Login </button>
+    <button onclick="Login2()" id="Log2" class=""> Part 2. Login </button>
+    <button onclick="Hi()" id="Hi" class="hide"> Say Hi!</button>
+    <button onclick="Animal()" id="Animal" class="hide"> Favorite Animal</button>
+    <img id="18" class="hide" src="Images/Tech1.jpg">
+    <img id="Cat" class="hide" src="Images/cat.jpg">
+    <img id="Dog" class="hide" src="Images/dog.jpg">
+    <img id="Frog" class="hide" src="Images/frog.jpg">
+    <img id="Mouse" class="hide" src="Images/mouse.jpg">
+    <p id="55" class="hide">“Much like mathematics, programming is a logico-deductive system. And I think the important point that I am making is that in a purely logico-deductive system there is no philosophy - everything is known. However, insofar as there is art in mathematics, there is philosophy in mathematics. Insofar as there is art in programming, there is philosophy in programming.” </p>
+  </body></html>
