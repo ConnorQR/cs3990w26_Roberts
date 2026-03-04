@@ -4,7 +4,7 @@
 <html>
   <head>
     <script>
-      function Buttons(username){
+      const button = function(username){
         if (username == "admin"){
           document.getElementById("Hi").classList.remove("hide");
           document.getElementById("Animal").classList.remove("hide");
@@ -35,7 +35,7 @@
           alert("I dont know you");
           document.getElementById("Log2").classList.remove("hide");
         }
-      Buttons(username);
+      button(username);
       }
 
       function Hi(){
@@ -96,7 +96,7 @@
         }
       }
 
-      function NWP(){
+      const NWP = function(){
         let age = prompt("Enter Age");
         let year = prompt("Enter Year of Admission to NWP");
         age = 4 + parseInt(age);
@@ -104,7 +104,7 @@
         alert(`You will complete your Bachelor Degree in CS at Age: ${age} in Year: ${year}`);
       }
 
-      function XD(){
+      const XD = function(){
         let age = prompt("Enter Age");
         let port = prompt("Enter Number of portfolios");
         if (age >= 14 && age <= 18){
@@ -119,7 +119,7 @@
         }
       }
 
-      function QA(){
+      const QA = function(){
         let age = prompt("Enter Age");
         let port = prompt("Enter Number of portfolios");
         if (age >= 14 && age <= 18){
@@ -142,7 +142,7 @@
           alert(`password: ${pass}`);
           for (let i = 1; i <= 2; i++){
             let password = prompt("Enter Password");
-            if(pass == password){
+            if(pass == password){ 
               break;
             }
             else{
