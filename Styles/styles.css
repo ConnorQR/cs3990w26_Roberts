@@ -5,3 +5,80 @@ button{
 .hide{
   display: none;
 }
+
+.Grid{
+  display: grid;
+  grid-template-columns: [line1] 100px [line2] 150px [line3] 150px [line4] 100px [line5] auto;
+  grid-template-rows: [row1] 100px [row12] 150px [row3] 150px [row4] 100px [row5] auto;
+}
+
+.Box1{
+  border-style: solid;
+  border-radius: 1%;
+  border-width: 1%;
+  border: 1%;
+  border-color: black;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.Box2{
+  border-style: solid;
+  border-radius: 1%;
+  border-width: 1%;
+  border: 1%;
+  border-color: black;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.Box3{
+  border-style: solid;
+  border-radius: 1%;
+  border-width: 1%;
+  border: 1%;
+  border-color: black;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.Box4{
+  border-style: solid;
+  border-radius: 1%;
+  border-width: 1%;
+  border: 1%;
+  border-color: black;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 2;
+}
+
+.Box5{
+  border-style: solid;
+  border-radius: 1%;
+  border-width: 1%;
+  border: 1%;
+  border-color: black;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start:3;
+  grid-row-end: 5;
+}
+
+.Box6{
+  border-radius: 1%;
+  border-width: 1%;
+  border-style: solid;
+  border: 1%;
+  border-color: black;
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
