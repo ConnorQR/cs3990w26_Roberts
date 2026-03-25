@@ -1,4 +1,4 @@
-export class ColorButton {
+export class ColorButton{
 
     constructor(btnText, btnBgColor, btnTitle, btnColor){
         this.btnText = btnText;
