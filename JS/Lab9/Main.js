@@ -145,7 +145,7 @@ export class Game {
     endGame() {
         this.board.innerHTML = "";
         this.board.classList.remove("active");
-        this.showMessage("⏰ Game Over!");
+        this.showMessage("⏰ Time is Up!");
     }
 
     render() {

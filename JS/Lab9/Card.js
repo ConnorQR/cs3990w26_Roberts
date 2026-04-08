@@ -58,6 +58,11 @@ export class Card {
                 return;
             }
 
+            if(this.game.blocked) {
+                this.game.showMessage("⚠️ This card is blocked!");
+                return;
+            }
+
             if (selected === this.data.answer) {
                 this.game.score++;
                 this.game.showMessage("✅ Correct!");
