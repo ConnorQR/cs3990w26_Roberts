@@ -1,108 +1,144 @@
-#header{
-  text-align: center;
-  background-color: pink;
-  p{
+body {
+    font-family: Arial;
     text-align: center;
-    background-color: salmon;
-    border-radius: 10px;
-  }
-  .para-container div{
-    background-color: rgb(224, 78, 78);
-    border-radius: 10px;
-    margin: 1%;
-  }
+    background: #f4f4f4;
+    background-image: url("background2.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-#P2{
-  margin: 1%;
-}
-
-.top-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-.number-box {
-  background-color: #b30000;
-  color: white;
-  padding: 8px 20px;
-  border-radius: 8px;
-  font-weight: bold;
-}
-
-.generate-btn {
-  display: block;
-  margin: 0 auto;
-  padding: 8px 12px;
-}
-
-.palette {
+.board {
     display: grid;
-    grid-template-columns: repeat(7, 25px);
-    gap: 5px;
-    margin-bottom: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px;
 }
 
-.color-cell {
-    width: 25px;
-    height: 25px;
-    border: 1px solid #000;
+.tile {
+    width: 100%;
+    height: 120px;
+    perspective: 1000px;
     cursor: pointer;
+    position: relative;
 }
 
-.text-block {
-    padding: 15px;
-    border: 1px solid #aaa;
+.tile .front,
+.tile .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    border: 2px solid #333;
+    border-radius: 10px;
 }
 
-#P3 {
-  .menu-header {
-    cursor: pointer;
-    font-weight: bold;
-    user-select: none;
-  }
-
-  .menu-list {
-    display: none;
-    list-style: none;
-    padding-left: 20px;
-    margin: 5px 0;
-  }
-
-  .menu-item {
-    cursor: pointer;
-    padding: 3px 0;
-    transition: color 0.2s ease;
-
-    &:hover {
-      color: darkorange;
-    }
-  }
-
-  .selected {
-    color: red;
-    font-weight: bold;
-  }
-
-  .image-container {
-    margin-top: 10px;
-
-    img {
-      width: 200px;
-      border-radius: 8px;
-    }
-  }
+.back {
+    background: #333;
+    color: white;
+    font-size: 24px;
 }
 
-.star {
-    cursor: pointer;
-    color: black;
-    font-size: 18px;
+.front {
+    background: white;
+    transform: rotateY(180deg);
 }
 
-.star.active {
-    color: orange;
+.tile.flip .front {
+    transform: rotateY(0);
+}
+
+.tile.flip .back {
+    transform: rotateY(180deg);
+}
+
+.card {
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.question {
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.selected {
+    background: lightblue;
+}
+
+.message-box {
+    position: fixed;      
+    top: 80px;       
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+
+    z-index: 9999;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 0.3s ease;
+}
+
+.message-box.show {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+.stars {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.start-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px;
+    padding: 10px;
+
+    border: none;    
+    border-radius: 10px;
+}
+
+
+.board.active {
+    border: 3px solid #333;
+    background-color: rgb(202, 136, 202);
+}
+
+
+.tile {
+    background: lightgray;
+    padding: 10px;
+    min-height: 120px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: background 0.3s;
+
+    border: 2px solid #555;  
+}
+
+.tile.correct {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.tile.wrong {
+    background-color: #f44336;
+    color: white;
 }
