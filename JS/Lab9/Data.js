@@ -1,38 +1,31 @@
-export const quizData = [
+export const Fruits = [
     {
-        question: "What is 2 + 2?",
-        options: ["1", "2", "3", "4"],
-        answer: "4"
+        fruit: "Mango",
+        descr: "A Mango"
+        img: 
     },
     {
-        question: "What is the Capital of France?",
-        options: ["Berlin", "Paris", "Rome", "Madrid"],
-        answer: "Paris"
+        fruit: "Orange",
+        descr: "A Mango"
     },
     {
-        question: "5 * 3 = ?",
-        options: ["15", "10", "20", "25"],
-        answer: "15"
+        fruit: "Mango",
+        descr: "A Mango"
     },
     {
-        question: "What does JS stands for?",
-        options: ["JavaSource", "JavaScript", "JustStyle", "None"],
-        answer: "JavaScript"
+        fruit: "Mango",
+        descr: "A Mango"
     },
     {
-        question: "What is HTML?",
-        options: ["Language", "Database", "OS", "Browser"],
-        answer: "Language"
+        fruit: "Mango",
+        descr: "A Mango"
     },
     {
-        question: "What is CSS used for?",
-        options: ["Logic", "Structure", "Styling", "Data"],
-        answer: "Styling"
-    }
-];
-
-export const assets = [
-    { type: "diamond", label: "💎 Diamond" },
-    { type: "bear", label: "🐻 Bear" },
-    { type: "cross", label: "❌ Cross" }
+        fruit: "Mango",
+        descr: "A Mango"
+    },
+    {
+        fruit: "Mango",
+        descr: "A Mango"
+    },
 ];
